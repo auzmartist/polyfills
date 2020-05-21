@@ -18,7 +18,10 @@ import '../platform/es6-misc.js';
 import '../platform/custom-event.js';
 import '../../node_modules/@webcomponents/template/template.js';
 import '../platform/promise.js';
-import '../platform/symbol.js';
+/**
+ * The Symbol polyfill throws an out of stack exception on IE11 when used in sync with core-js
+ */
+// import '../platform/symbol.js';
 import '../platform/flag-parser.js';
 import '../../node_modules/@webcomponents/shadydom/src/shadydom.js';
 import '../../node_modules/@webcomponents/custom-elements/src/custom-elements.js';
